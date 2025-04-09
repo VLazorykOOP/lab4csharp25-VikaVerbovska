@@ -107,7 +107,12 @@ class VectorUInt
             elements[i] = initialValue;
         numVectors++;
     }
-
+    
+ ~VectorUInt()
+ {
+     Console.WriteLine("Вектор знищений.");
+ }
+    
     public uint Size => size; // Тільки для читання
     public int CodeError { get; set; } // Доступ для читання і запису
 
