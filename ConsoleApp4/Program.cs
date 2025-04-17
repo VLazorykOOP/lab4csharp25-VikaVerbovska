@@ -582,7 +582,7 @@ class MatrixUint
     public static MatrixUint operator +(MatrixUint mat1, MatrixUint mat2)
     {
         if (mat1.n != mat2.n || mat1.m != mat2.m)
-            return mat1; // Якщо розміри не співпадають, повертається перша матриця
+            return mat1; 
 
         MatrixUint result = new MatrixUint(mat1.n, mat1.m);
         for (int i = 0; i < mat1.n; i++)
@@ -624,7 +624,7 @@ class MatrixUint
     public static MatrixUint operator *(MatrixUint mat1, MatrixUint mat2)
     {
         if (mat1.m != mat2.n)
-            return mat1; // Не можна множити матриці з непідходящими розмірами
+            return mat1; 
 
         MatrixUint result = new MatrixUint(mat1.n, mat2.m);
         for (int i = 0; i < mat1.n; i++)
